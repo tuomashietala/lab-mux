@@ -1,93 +1,72 @@
-* {
+/* * {
     box-sizing: border-box;
-  }
+  } */
   
   body { 
+
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10%;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(34, 34, 34);
     background-color: #fff;
+  
   }
   
-  img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      float: left;
-      padding-bottom: 10%;
+
+  .header_links {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    display: flex;
+    margin-right: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration-line: none;
+   
+    /* border below shows the nav area */
+    border-color: rgb(39, 39, 39);
+    border-style: solid;
+    border-radius: 8px;
+    border-width: thin;
   }
-  
-  .logo {
-      float: left;
-  }
-  
-  /* header & button settings */
-  
-  .header {
-    overflow: hidden;
-    background-color: #eeeeee;
-    padding: 20px 10px;
-    border-radius: 10px;
-    margin: 0 auto;
-  }
-  
-  .header a {
-    float: left;
-    color: rgb(34, 34, 34);
-    text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 14px;
-    padding-right: 14px;
-    margin-right: 8px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 32px;
-    border-radius: 5px;
-  }
-  
-  .header a.logo {
-  /*   font-size: 24px;
-    font-weight: bold; */
-    margin: 0 auto;
-  }
-  
-  .header a:hover {
-    background-color: #A8DADC;
-    color: rgb(34,34,34);
-  }
-  
-  .header a.active {
-    background-color: #0055AA;
-    color: white;
-  }
-  
-  .header-right {
-    float: right;
-    margin: 0 auto;
-  }
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
   /* mobile responsiveness */
   
   @media screen and (max-width: 800px) {
-    .header a {
-      float: none;
-      display: block;
-      align-items: left;
-    }
-    
-    .header-right {
-      float: none;
-    }
-    
-    .logo {
-      float: none;
-      padding-bottom: 0;
-    }
+  
   }
