@@ -2,104 +2,194 @@
     box-sizing: border-box;
   } */
 
-body {
-
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(34, 34, 34);
-  background-color: #fff;
-
+html {
+  box-sizing: border-box;
 }
 
+body {
+
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(34, 34, 34);
+  background-color: #BBDBC4;
+}
+
+
+/* no link underlines */
 a {
   color: #1e1e1e;
   text-decoration: none;
-  /* no underline */
 }
 
 
 .header_container {
 
-  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  background: #FFFFFF;
+
+  /*   outline: dashed; */
+}
+
+.header_link_area {
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 8px 24px;
-  gap: 10px;
+  gap: 32px;
 
-  position: relative;
+  background-color: #ffffff;
 
-  /* True White */
-
-  background: #FFFFFF;
-
-  /* border below shows the nav area */
-  border-color: rgb(39, 39, 39);
-  border-style: dashed;
-  border-width: thin;
-
-}
-
-.header_links {
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 16px;
-  gap: 16px;
-
-  /* näyttää border alueen */
-  border-style: dashed;
 
   /* list styling */
   list-style-type: none;
-
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
-.topnav_link {
-  padding: 6px;
+
+.topnav-basic-link {
+  padding: 4px;
+}
+
+/* Active basic topnav link (bold) */
+.active {
+  font-weight: 600;
 }
 
 
+/* link underline animation */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #1e1e1e;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.6);
+  transform-origin: bottom center;
+  transition: transform 0.1s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
 
 
+.CTA {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  margin-left: 16px;
 
+  background: #de4543;
+  color: #FFFFFF;
 
+  border-radius: 4px;
 
+  opacity: 0.8;
+  transition: 0.3s;
 
+  text-decoration: none;
+  cursor: pointer;
+}
 
+.button:hover {
+  opacity: 1
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* mobile hidden */
+.mobile-container {
+  display: none;
+}
 
 
 /* mobile responsiveness */
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 700px) {
+
+.mobile-container {
+  display:block;
+}
+
+.header_container {
+  display: none;
+}
+  
+/* Style the navigation menu */
+.topnav {
+  background-color: #333;
+  position:relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+
+.mobile-logo{
+  display: block;
+  position: absolute;
+  right: 1;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ffffff;
+  color: white;
+  height: 19px;
+}
+
+}
+/* 
+- muista disabloida hover-efekti mobiilissa
+- active link
+
+*/
