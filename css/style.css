@@ -152,6 +152,7 @@ a {
     text-decoration: none;
     font-size: 17px;
     display: block;
+    height: 20px;
   }
 
   /* Style the hamburger menu */
@@ -177,12 +178,12 @@ a {
 /*   /* Add a grey background color on mouse-over */
   .topnav a:hover {
     
+    
   } */
 
   /* Style the active link (or home/logo) */
   .active {
     background-color: #fff;
-    height: 20px;
   }
 
 }
