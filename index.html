@@ -12,6 +12,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest"> -->
+
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
         <div class="mobile-container">
 
             <!-- Top Navigation Menu -->
-            <div class="topnav">
+            <div id="menupop" class="topnav">
                 <a href="#home" class="active"><img class="mobile-logo" src="images/logo_mobile.svg"></a>
                 <div id="myLinks">
                     <a href="#news">News</a>
@@ -47,7 +49,7 @@
                     <a href="#about">About</a>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction() , myFunction2()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -63,22 +65,12 @@
         </div>
         <!-- End of smartphone / tablet look -->
 
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script>
-
         <!-- MOBILE ONLY ENDS -->
 
 
     </header>
-
+    <script src="script1.js"></script> 
+    <script src="script2.js"></script> 
 </body>
 
 </html>

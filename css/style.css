@@ -138,6 +138,7 @@ a {
   .topnav {
     background-color: #fff;
     position: relative;
+    text-align: center;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
