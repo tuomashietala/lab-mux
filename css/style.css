@@ -189,6 +189,10 @@ a {
 
 }
 
+.cta_text {
+  text-decoration: tomato !important;
+}
+
 /* 
 - muista disabloida hover-efekti mobiilissa
 - active link
