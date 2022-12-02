@@ -11,14 +11,29 @@ body {
   margin: 0 5%;
 
   font-family: Arial, Helvetica, sans-serif;
-  color: #C6C9CF;
-  background-color: #0E2434;
+  color: #ED4140;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #FFFDF9;
 }
+
+h1 , h2 , h3 {
+  color:#214086;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: large;
+}
+
 
 
 /* no link underlines */
 a {
-  color: #1e1e1e;
+  color: #ED4140;
   text-decoration: none;
 }
 
@@ -31,7 +46,7 @@ a {
   align-items: center;
   gap: 10px;
   position: relative;
-  background: #0E2434;
+  background-color: #FFFDF9;
 
   /*   outline: dashed; */
 }
@@ -44,8 +59,9 @@ a {
   align-items: center;
   padding: 8px 24px;
   gap: 32px;
+  font-weight: 200;
 
-  background-color: #0E2434;
+  background-color: #FFFDF9;
 
 
   /* list styling */
@@ -62,6 +78,8 @@ a {
 
 /* Active basic topnav link (bold) */
 .active {
+  text-underline-offset: 3px;
+  text-decoration:underline;
   font-weight: 600;
 }
 
@@ -71,7 +89,7 @@ a {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #C6C9CF;
+  color: #214086;
 }
 
 .hover-underline-animation::after {
@@ -82,7 +100,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #C0444A;
+  background-color: #ED4140;
   transform-origin: bottom center;
   transition: transform 0.1s ease-out;
 }
@@ -100,9 +118,9 @@ a {
   padding: 8px 16px;
   margin-left: 16px;
 
-  background: #de4543;
-  color: #ffffff;
-
+  background-color: #ED4140;
+  color: #fff;
+  font-weight: 600;
   border-radius: 4px;
 
   opacity: 0.8;
@@ -146,7 +164,7 @@ margin-right:3rem;
 
   /* Style the navigation menu */
   .topnav {
-    background-color: #0E2434;
+    background-color: #FFFDF9;
     position: relative;
     text-align: center;
   }
@@ -158,7 +176,7 @@ margin-right:3rem;
 
   /* Style navigation menu links */
   .topnav a {
-    color: #C0444A;
+    color: #214086;
     padding: 20px 20px;
     text-decoration: none;
     font-size: 17px;
@@ -168,7 +186,8 @@ margin-right:3rem;
 
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: #0E2434;
+    color:#ED4140;
+    background: #FFFDF9;
     display: block;
     position: absolute;
     right: 0;
@@ -188,18 +207,18 @@ margin-right:3rem;
 
 /*   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #1c3a50;
+    background-color: #efefef86;
     font-weight: 600;
     
   }
 
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #0E2434;
+    background-color: #FFFDF9;
   }
 
 }
 
 .cta_text {
-  background-color: #c0444a1e;
+  background-color: #ed40402c;
 }
