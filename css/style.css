@@ -8,11 +8,11 @@ html {
 
 body {
 
-  margin: 0;
+  margin: 0 5%;
 
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(34, 34, 34);
-  background-color: #BBDBC4;
+  color: #C6C9CF;
+  background-color: #0E2434;
 }
 
 
@@ -31,7 +31,7 @@ a {
   align-items: center;
   gap: 10px;
   position: relative;
-  background: #FFFFFF;
+  background: #0E2434;
 
   /*   outline: dashed; */
 }
@@ -45,7 +45,7 @@ a {
   padding: 8px 24px;
   gap: 32px;
 
-  background-color: #ffffff;
+  background-color: #0E2434;
 
 
   /* list styling */
@@ -71,7 +71,7 @@ a {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #1e1e1e;
+  color: #C6C9CF;
 }
 
 .hover-underline-animation::after {
@@ -82,7 +82,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: #C0444A;
   transform-origin: bottom center;
   transition: transform 0.1s ease-out;
 }
@@ -101,7 +101,7 @@ a {
   margin-left: 16px;
 
   background: #de4543;
-  color: #FFFFFF;
+  color: #ffffff;
 
   border-radius: 4px;
 
@@ -121,10 +121,20 @@ a {
   display: none;
 }
 
+/* Content styles */
+.content {
+margin-top:3rem; 
+margin-left:1rem; 
+margin-right:3rem;
+}
 
 /* mobile responsiveness */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+
+  body {
+    margin: 0 0%;
+  }
 
   .mobile-container {
     display: block;
@@ -136,7 +146,7 @@ a {
 
   /* Style the navigation menu */
   .topnav {
-    background-color: #fff;
+    background-color: #0E2434;
     position: relative;
     text-align: center;
   }
@@ -148,7 +158,7 @@ a {
 
   /* Style navigation menu links */
   .topnav a {
-    color: rgb(0, 0, 0);
+    color: #C0444A;
     padding: 20px 20px;
     text-decoration: none;
     font-size: 17px;
@@ -158,7 +168,7 @@ a {
 
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: rgb(255, 255, 255);
+    background: #0E2434;
     display: block;
     position: absolute;
     right: 0;
@@ -178,23 +188,18 @@ a {
 
 /*   /* Add a grey background color on mouse-over */
   .topnav a:hover {
+    background-color: #1c3a50;
     font-weight: 600;
     
   }
 
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #fff;
+    background-color: #0E2434;
   }
 
 }
 
 .cta_text {
-  text-decoration: tomato !important;
+  background-color: #c0444a1e;
 }
-
-/* 
-- muista disabloida hover-efekti mobiilissa
-- active link
-
-*/
