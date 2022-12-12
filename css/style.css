@@ -263,7 +263,6 @@ footer .social-icons li a {
     position: absolute;
     right: 0;
     top: 0;
-
   }
 
   .mobile-logo {
@@ -280,7 +279,6 @@ footer .social-icons li a {
   .topnav a:hover {
     background-color: #efefef86;
     font-weight: 600;
-
   }
 
   /* Style the active link (or home/logo) */
@@ -305,7 +303,6 @@ footer .social-icons li a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    
   }
 
 }
