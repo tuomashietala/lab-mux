@@ -8,7 +8,7 @@ html {
 
 body {
 
-  margin: 0 5%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -45,11 +45,11 @@ a {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 10px;
   position: fixed;
-  width: 90%;
+  width: 100%;
   background-color: #FFFDF9;
 
   /*   outline: dashed; */
@@ -143,12 +143,17 @@ a {
   display: none;
 }
 
+.content-container { 
+  display: flex;
+  justify-content: center;
+}
+
+
 /* Content styles */
 .content {
   margin-top: 6rem;
   margin-left: 1rem;
-  margin-right: 3rem;
-  align-items: center;
+  margin-right: 1rem;
 }
 
 
@@ -161,7 +166,6 @@ footer {
   color: rgb(0, 0, 0);
   padding-bottom: 30px;
   background-color: #ececec;
-  position: fixed;
   left: 0;
   bottom: 0;
   margin: 0;
