@@ -9,7 +9,8 @@ html {
 body {
 
   margin: 0 5%;
-
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   color: #ED4140;
   font-weight: 500;
@@ -17,8 +18,10 @@ body {
   background-color: #FFFDF9;
 }
 
-h1 , h2 , h3 {
-  color:#214086;
+h1,
+h2,
+h3 {
+  color: #214086;
 }
 
 h1 {
@@ -45,7 +48,8 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  position: relative;
+  position: fixed;
+  width: 90%;
   background-color: #FFFDF9;
 
   /*   outline: dashed; */
@@ -79,7 +83,7 @@ a {
 /* Active basic topnav link (bold) */
 .active {
   text-underline-offset: 3px;
-  text-decoration:underline;
+  text-decoration: underline;
   font-weight: 600;
 }
 
@@ -141,21 +145,101 @@ a {
 
 /* Content styles */
 .content {
-margin-top:3rem; 
-margin-left:1rem; 
-margin-right:3rem;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  align-items: center;
 }
+
+
+
+
+
+
+
+footer {
+  color: rgb(0, 0, 0);
+  padding-bottom: 30px;
+  background-color: #ececec;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: small;
+  padding-left: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0px 10px;
+  margin: 0 0 0 0;
+}
+
+
+.par {
+  padding-left: 10px;
+}
+
+footer h3 {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer .social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0;
+}
+
+footer .social-icons li {
+  margin-right: 20px;
+}
+
+footer .social-icons li a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+
+
+
+
+
+
 
 /* mobile responsiveness */
 
 @media screen and (max-width: 800px) {
 
+  .content {}
+
+  .row {
+    display: block;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+  }
+
   body {
-    margin: 0 0%;
+    margin: 0 0;
   }
 
   .mobile-container {
     display: block;
+    position: fixed;
+    width: 100%;
   }
 
   .header_container {
@@ -167,6 +251,7 @@ margin-right:3rem;
     background-color: #FFFDF9;
     position: relative;
     text-align: center;
+    width: 100%;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -186,7 +271,8 @@ margin-right:3rem;
 
   /* Style the hamburger menu */
   .topnav a.icon {
-    color:#ED4140;
+    font-size: larger;
+    color: #ED4140;
     background: #FFFDF9;
     display: block;
     position: absolute;
@@ -205,11 +291,11 @@ margin-right:3rem;
   }
 
 
-/*   /* Add a grey background color on mouse-over */
+  /*   /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #efefef86;
     font-weight: 600;
-    
+
   }
 
   /* Style the active link (or home/logo) */
@@ -217,8 +303,9 @@ margin-right:3rem;
     background-color: #FFFDF9;
   }
 
-}
 
-.cta_text {
+  .cta_text {
   background-color: #ed40402c;
+  }
+
 }
