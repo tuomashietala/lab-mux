@@ -157,11 +157,6 @@ a {
 }
 
 
-
-
-
-
-
 footer {
   color: rgb(0, 0, 0);
   padding-bottom: 30px;
@@ -198,7 +193,6 @@ footer h3 {
 footer .social-icons {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
   padding: 0px;
   margin: 0;
 }
@@ -225,14 +219,16 @@ footer .social-icons li a {
 
 
   .row {
-    display: block;
+    display: flex;
     flex-direction: column;
+    padding-right: 10px;
   }
 
   .social-icons {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    justify-content: flex-start;
+    
   }
 
   body {
