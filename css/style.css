@@ -288,7 +288,10 @@ footer .social-icons li a {
 
 
   .cta_text {
-  background-color: #ed40402c;
+  background-color: #43527735;
+  border: #43527731;
+  border-style: solid;
+  border-width: 1px;
   }
 
 
