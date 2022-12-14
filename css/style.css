@@ -199,6 +199,12 @@ footer h3 {
   margin-left:-10px;
 }
 
+.social-icons li a:hover {
+  background-color: #213f8638;
+  border-radius: 10%;
+}
+
+
 footer .social-icons {
   list-style: none;
   display: flex;
@@ -214,14 +220,6 @@ footer .social-icons li a {
   padding: 5px 10px;
   display: flex;
 }
-
-
-
-
-
-
-
-
 
 
 /* mobile responsiveness */
