@@ -160,7 +160,7 @@ a {
 footer {
   color: rgb(0, 0, 0);
   padding-bottom: 30px;
-  background-color: #ececec;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 50%);
   left: 0;
   bottom: 0;
   margin: 40px 0 0 0;
