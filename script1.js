@@ -14,4 +14,5 @@ document.addEventListener('click', ({ target }) => {
   if (!target.closest('#menupop')) {
     document.querySelector('#myLinks').style.display = 'none'
   }
-})
+  }
+)
