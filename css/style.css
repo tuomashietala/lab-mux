@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 38;
+  font-size: 38px;
 }
 
 
@@ -49,9 +49,12 @@ a {
   gap: 10px;
   position: fixed;
   width: 100%;
-  background-color: #FFFDF9;
 
-  /*   outline: dashed; */
+  /* Glass morphism - header */
+  background-color: rgba(255, 253, 249, 0.1); /* This is almost transparent white */
+  backdrop-filter: blur(10px); /* The blur amount can be adjusted */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: subtle border can sometimes enhance the effect */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow can sometimes enhance the effect */
 }
 
 .header_link_area {
@@ -63,8 +66,6 @@ a {
   padding: 8px 24px;
   gap: 32px;
   font-weight: 200;
-
-  background-color: #FFFDF9;
 
 
   /* list styling */
@@ -247,10 +248,14 @@ footer .social-icons li a {
 
   /* Style the navigation menu */
   .topnav {
-    background-color: #FFFDF9;
     position: relative;
     text-align: center;
     width: 100%;
+      /* Glass morphism */
+      background-color: rgba(255, 253, 249, 0.1); /* This is almost transparent white */
+      backdrop-filter: blur(50px); /* The blur amount can be adjusted */
+      border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: subtle border can sometimes enhance the effect */
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow can sometimes enhance the effect */
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -272,7 +277,6 @@ footer .social-icons li a {
   .topnav a.icon {
     font-size: larger;
     color: #ED4140;
-    background: #FFFDF9;
     display: block;
     position: absolute;
     right: 0;
@@ -282,22 +286,25 @@ footer .social-icons li a {
   .mobile-logo {
     display: block;
     position: absolute;
-    right: 1;
     top: 0;
     padding-top: 10px;
     padding-bottom: 0px;
   }
 
 
-  /*   /* Add a grey background color on mouse-over */
+  /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #efefef86;
+    background-color: #8faed421;
     font-weight: 600;
   }
 
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #FFFDF9;
+    /* Glass morphism */
+    background-color: rgba(255, 253, 249, 0.1); /* This is almost transparent white */
+    backdrop-filter: blur(10px); /* The blur amount can be adjusted */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: subtle border can sometimes enhance the effect */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow can sometimes enhance the effect */
   }
 
   .cta_text {
