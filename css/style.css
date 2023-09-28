@@ -1,7 +1,3 @@
-/* * {
-    box-sizing: border-box;
-  } */
-
 html {
   box-sizing: border-box;
 }
@@ -235,7 +231,7 @@ footer .social-icons li a {
 
 
 
-/* mobile responsiveness */
+/* mobile */
 
 @media screen and (max-width: 800px) {
 
@@ -259,8 +255,7 @@ footer .social-icons li a {
     text-align: center;
     width: 100%;
       /* Glass morphism */
-      background-color: rgba(255, 253, 249, 0.1); /* This is almost transparent white */
-      backdrop-filter: blur(50px); /* The blur amount can be adjusted */
+      background-color: rgb(255, 253, 249); /* This is almost transparent white */
       border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: subtle border can sometimes enhance the effect */
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow can sometimes enhance the effect */
   }
@@ -280,9 +275,7 @@ footer .social-icons li a {
     height: 20px;
           /* Glass morphism */
           background-color: rgba(255, 253, 249, 0.1); /* This is almost transparent white */
-          backdrop-filter: blur(50px); /* The blur amount can be adjusted */
           border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: subtle border can sometimes enhance the effect */
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow can sometimes enhance the effect */
   }
 
   /* Style the hamburger menu */
@@ -314,7 +307,7 @@ footer .social-icons li a {
   .active {
     /* Glass morphism */
     background-color: rgba(255, 253, 249, 0.1); /* This is almost transparent white */
-    backdrop-filter: blur(50px); /* The blur amount can be adjusted */
+    backdrop-filter: blur(30px); /* The blur amount can be adjusted */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: subtle border can sometimes enhance the effect */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow can sometimes enhance the effect */
   }
@@ -335,10 +328,10 @@ footer .social-icons li a {
 
   /* Content styles */
 .content {
-  display: wrap;
-  width: 80%;
-  padding: 8px 24px;
-}
+   display: wrap;
+   width: 80%;
+   padding: 8px 24px;
+  }
 
   .social-icons {
     display: flex;
